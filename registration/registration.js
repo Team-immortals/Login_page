@@ -11,5 +11,13 @@ myForm.addEventListener('submit', onSubmit);
 
 function onSubmit(e) {
     e.preventDefault();
+    if(first_name.value === '' && last_name.value === '') {
+        message.classList.add('error');
+        message.innerHTML = 'Please enter all fields';
+
+        setTimeout(() => message.remove(), 5000);
+    } else {
+        console.log('success');
+    }
 }
     

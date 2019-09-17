@@ -88,3 +88,24 @@ a {
     color: rgb(230, 0, 230)
 }
 
+.error {
+    background: orangered;
+    color: #fff;
+    margin-bottom: 15px;
+    width: 250px;
+    padding: 12px;
+
+}
+
+@media screen and (max-width: 800px) {
+    .main, .info-div, .header, .form-div {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .main, .info-div, .header, .form-div {
+      width: 100%;
+    }
+  }
