@@ -10,14 +10,36 @@ const message = document.querySelector('#msg');
 myForm.addEventListener('submit', onSubmit);
 
 function onSubmit(e) {
-    e.preventDefault();
+    var errorr = [];
+    var illegalChars = /[\W_]/
     if(first_name.value === '' && last_name.value === '') {
-        message.classList.add('error');
-        message.innerHTML = 'Please enter all fields';
+        errorr.push('Please enter all fields');
 
         setTimeout(() => message.remove(), 5000);
+    }
+
+    if (password_input.value.length < 6) {
+        errorr.push('Password must be more than six characters');
+    }
+
+    if (password_input.value.length >= 20) {
+        errorr.push('Password must be less than 20 characters');
+    }
+
+    if (phone_number.value.length < 6) {
+        errorr.push('Phone number must be more than six digits');
+    }
+
+    if (phone_number.value.length >= 11) {
+        errorr.push('Phone number must not be more than 11 digits');
+    }
+
+    if(errorr.length > 0) {
+        e.preventDefault();
+        message.classList.add('error');
+        message.innerHTML = errorr.join(', ')
     } else {
-        console.log('success');
+        console.log('Successful');
     }
 }
     
