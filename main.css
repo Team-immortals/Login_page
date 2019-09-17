@@ -10,7 +10,7 @@ background-size: cover;
 
 form {
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
        
 }
 
@@ -29,7 +29,7 @@ input {
 
 .button{
     background-color: #A625D3;
-    color: black;
+    color: white;
     border-radius: 20px;
     border-color:#A625D3;
     width: 400px;
@@ -50,8 +50,7 @@ input {
 }
 
 ::placeholder{
-    color:black;
-    font-size: 20px;
+    font-size: 15px;
 
 }
 
@@ -73,8 +72,8 @@ img {
 .forgot {
     text-align: center;
     padding-bottom:40px;
-    margin-top: -50px;
-    font-size: 25px;
+    margin-top: 10px;
+    font-size: 15px;
   }
 
   .password-details a{
