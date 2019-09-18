@@ -4,9 +4,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
-    background-image: url("background-dashboard.jpg");
+    background-image: url("https://res.cloudinary.com/gbogz/image/upload/v1568824269/la417zfx4xicxjrxzyae.png");
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+    background-position: top; 
+
 
 }
 
@@ -31,19 +33,22 @@ hr {
 }
 
 .dashboard h2 {
-    /* text-decoration: underline; */
-    color: white;
+  
+    color: black;
     font-style: italic;
-    margin-top: 25px
+    margin-top: 25px;
+    font-size: 35px
 }
-
+  /* text-decoration: underline; */
 .dashboard hr {
     margin-left: 180px;
     margin-right: 180px;
     margin-top: 5px;
-    border: 1px solid white;
+    border: 2px solid #A625D3;
 }
 
 .dashboard p {
-    margin-top: 10px;
+    margin-top: 45px;
+    font-size: 20px;
+    font-weight: bold;
 }
