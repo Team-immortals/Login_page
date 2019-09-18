@@ -4,7 +4,7 @@
     $host = "localhost";
     $user = "root";
     $password = "";
-    $db = "mydb";
+    $db = "signup";
 
     $con =  mysqli_connect($host,$user,$password);
      mysqli_select_db($con, $db);
@@ -16,32 +16,23 @@
 
 
         $email = $_POST['email'];
-        $password = $_POST['psw'];
+        $password = $_POST['password'];     
     
-       
-    
-    
-            
-    
-            $sql = " select * from logintable where username= '$email' && password = '$password'";
+            $sql = "select * from signup where email= '".$email."' && password = '".$password."' limit 1";
     
             $result = mysqli_query($con, $sql);
             
             if(mysqli_num_rows($result) == 1){
-              header('location:Forgot Password.php');
-            }
+   header('location:dashboard.html');
+  }
             
-            else{
-                echo "<h1 align = 'center' style = ' color : purple;'>Invalid Login credentials</h1>";
+ else{
+    echo "<h1 align = 'center' style = ' color : purple;'>Invalid Login credentials</h1>";
+                
             }
     
         
         }
-        
-
-    
-
-
 
 ?>
 
