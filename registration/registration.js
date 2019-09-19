@@ -30,7 +30,7 @@ function onSubmit(e) {
         errorr.push('Phone number must be more than six digits');
     }
 
-    if (phone_number.value.length >= 11) {
+    if (phone_number.value.length > 11) {
         errorr.push('Phone number must not be more than 11 digits');
     }
 

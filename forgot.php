@@ -16,11 +16,11 @@
         $email = $_POST['email'];
         $password = $_POST['password'];     
     
-            $sql = "select * from signup where email= '".$email."' && password = '".$password."' limit 1";
+            $sql = "update signup set password='".$password."' where email= '".$email."'";
     
             $result = mysqli_query($con, $sql);
             
-            if(mysqli_num_rows($result) == 1){
+            if($result !== false){
    header('location:dashboard.html');
   }
             
