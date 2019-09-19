@@ -1,58 +1,3 @@
-
-* {
-    margin: 0px;
-}
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    background-image: url("https://res.cloudinary.com/gbogz/image/upload/v1568824269/la417zfx4xicxjrxzyae.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top; 
-
-
-}
-
-hr {
-    background-color: white;
-}
-
-#dashboard-design {
-    border:2px solid white;
-    border-radius: 15px;
-    width: 500px;
-    height: 300px;
-    background-color: rgba(255, 219, 153, 0.7);
-    margin-top: 150px;
-    margin-right: 100px;
-    margin-bottom: 100px;
-    margin-left: 400px
-}
-
-.dashboard {
-    text-align: center
-}
-
-.dashboard h2 {
-  
-    color: black;
-    font-style: italic;
-    margin-top: 25px;
-    font-size: 35px
-}
-  /* text-decoration: underline; */
-.dashboard hr {
-    margin-left: 180px;
-    margin-right: 180px;
-    margin-top: 5px;
-    border: 2px solid #A625D3;
-}
-
-.dashboard p {
-    margin-top: 45px;
-    font-size: 20px;
-    font-weight: bold;
-
 * {
     margin: 0px;
 }
@@ -88,7 +33,6 @@ body > a > img {
     text-align: center;
 }
 
-  /* text-decoration: underline; */
 .dashboard hr {
     margin-left: 10vw;
     margin-right: 10vw;
@@ -103,8 +47,7 @@ body > a > img {
     font-size: 2vw;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    hyphens: auto;
-  
+    hyphens: auto; 
 }
 
 .dashboard p {
@@ -113,5 +56,4 @@ body > a > img {
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
-
 }
